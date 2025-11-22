@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trim Craft Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f6f7f9;
+      color: #333;
+    }
+
+    /* ====== ヒーローエリア ====== */
+    .hero {
+      background: #0b2a68;
+      color: white;
+      text-align: center;
+      padding: 80px 20px 100px;
+    }
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    .hero img {
+      width: 300px;
+      margin-top: 30px;
+    }
+
+    /* ====== ボタン ====== */
+    .btn-lineup {
+      margin-top: 25px;
+      background: #ffcc00;
+      color: #000;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* ====== 協賛企業スクロール ====== */
+    .sponsor-section {
+      background: white;
+      padding: 35px 0;
+      overflow: hidden;
+      border-top: 2px solid #e0e0e0;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .sponsor-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 12s linear infinite;
+    }
+    .sponsor {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 0 40px;
+      opacity: 0.8;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ====== フッター ====== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b2a68;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ヒーローエリア -->
+  <header class="hero">
+    <h1>Trim Craft Hub</h1>
+    <p>町工場の技術で、中古車の価値をアップデート</p>
+
+    <!-- 車内レイアウトイラスト -->
+    <img src="car_interior_layout.png" alt="車内イラスト">
+
+    <!-- ECサイトへのボタン -->
+    <a class="btn-lineup" href="#">部品購入</a>
+  </header>
+
+  <!-- 協賛企業自動スクロール -->
+  <section class="sponsor-section">
+    <div class="sponsor-track">
+      <div class="sponsor">A</div>
+      <div class="sponsor">B</div>
+      <div class="sponsor">C</div>
+      <div class="sponsor">D</div>
+      <div class="sponsor">E</div>
+
+      <!-- 無限ループ用に複製 -->
+      <div class="sponsor">A</div>
+      <div class="sponsor">B</div>
+      <div class="sponsor">C</div>
+      <div class="sponsor">D</div>
+      <div class="sponsor">E</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Trim Craft Hub
+  </footer>
+
+</body>
+</html>
